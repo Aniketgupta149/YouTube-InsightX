@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 # 🎥 YouTube Analytics Pro
-
 ![YouTube Analytics Pro Banner](Assets/Youtube_logo3.png)
-
 **YouTube Analytics Pro** is a powerful, modern web application designed to extract, analyze, and visualize data from any YouTube channel. Built with **Streamlit** and the **YouTube Data API v3**, it provides deep insights into channel performance, video engagement, and growth trends through an intuitive and stunning dark-mode UI.
 
 ---
@@ -139,8 +137,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <b>Made with ❤️ by Aniket</b>
+  <b>Made with by Aniket</b>
 </div>
-=======
-# YouTube-InsightX
->>>>>>> 637364624f0628893a948435fe98846ddd734f1a
+
+
