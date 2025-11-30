@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎥 YouTube Analytics Pro
 
 ![YouTube Analytics Pro Banner](Assets/Youtube_logo3.png)
@@ -140,3 +141,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <b>Made with ❤️ by Aniket</b>
 </div>
+=======
+# YouTube-InsightX
+>>>>>>> 637364624f0628893a948435fe98846ddd734f1a
