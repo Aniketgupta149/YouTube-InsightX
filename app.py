@@ -215,7 +215,7 @@ if "start_dashboard" not in st.session_state:
     st.session_state.start_dashboard = False
 
 if "api_key" not in st.session_state:
-    st.session_state.api_key = "AIzaSyAMZsRj_ZFqSd07UO8PVHjQDSV1isCPeAA"
+    st.session_state.api_key = "AIzaSyDl_pvtmwWypY8RuhywsIB_DlxxSAzLZvg"
 
 if "channel_url" not in st.session_state:
     st.session_state.channel_url = ""
