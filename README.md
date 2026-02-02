@@ -70,7 +70,7 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/YouTube_Info_Extractor.git
+   git clone https://github.com/Aniketgupta149/YouTube_Info_Extractor.git
    cd YouTube_Info_Extractor
    ```
 
@@ -86,7 +86,7 @@
 
 4. **Launch**
    - The app will open in your default browser at `http://localhost:8501`.
-   - Enter a YouTube Channel URL (e.g., `https://www.youtube.com/@ChannelName`) to start analyzing!
+   - Enter a YouTube Channel URL (e.g., `https://www.youtube.com/@ChannelName`) to start analysing!
 
 ---
 
