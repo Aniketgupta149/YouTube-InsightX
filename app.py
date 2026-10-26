@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from googleapiclient.discovery import build
 import pandas as pd
@@ -214,8 +215,17 @@ st.markdown("""
 if "start_dashboard" not in st.session_state:
     st.session_state.start_dashboard = False
 
+def get_secret(name):
+    try:
+        return st.secrets[name]
+    except Exception:
+        return os.getenv(name)
+
 if "api_key" not in st.session_state:
-    st.session_state.api_key = "AIzaSyDl_pvtmwWypY8RuhywsIB_DlxxSAzLZvg"
+    st.session_state.api_key = get_secret("YOUTUBE_API_KEY")
+    if not st.session_state.api_key:
+        st.error("Missing YOUTUBE_API_KEY. Add it to .streamlit/secrets.toml or set it as an environment variable.")
+        st.stop()
 
 if "channel_url" not in st.session_state:
     st.session_state.channel_url = ""
@@ -539,7 +549,6 @@ else:
             st.rerun()
     
     st.markdown("---")
-    # API KEy :AIzaSyAMZsRj_ZFqSd07UO8PVHjQDSV1isCPeAA
     # Key Metrics
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("📹 Total Videos", f"{int(channel_info['stats'].get('videoCount', 0)):,}")

@@ -70,8 +70,8 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Aniketgupta149/YouTube_Info_Extractor.git
-   cd YouTube_Info_Extractor
+   git clone https://github.com/Aniketgupta149/YouTube-InsightX.git
+   cd YouTube-InsightX
    ```
 
 2. **Install Dependencies**
@@ -79,12 +79,14 @@
    pip install -r requirements.txt
    ```
 
-3. **Run the Application**
+3. **Add your API key** (see [API Configuration](#-api-configuration) below)
+
+4. **Run the Application**
    ```bash
    streamlit run app.py
    ```
 
-4. **Launch**
+5. **Launch**
    - The app will open in your default browser at `http://localhost:8501`.
    - Enter a YouTube Channel URL (e.g., `https://www.youtube.com/@ChannelName`) to start analysing!
 
@@ -93,12 +95,14 @@
 ## 📂 Project Structure
 
 ```
-YouTube_Info_Extractor/
+YouTube-InsightX/
 ├── Assets/                 # Images and icons for the UI
 │   ├── Youtube_logo3.png
 │   ├── work-from-home.svg
 │   ├── visual-collaboration.svg
 │   └── ...
+├── .streamlit/
+│   └── secrets.toml.example  # Template for your API key
 ├── app.py                  # Main application code
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Project documentation
@@ -109,12 +113,18 @@ YouTube_Info_Extractor/
 
 ## 🔑 API Configuration
 
-The application comes with a default API key for testing. For production use or higher rate limits, replace it with your own key:
+The app needs your own YouTube Data API v3 key:
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
 2. Create a project and enable **YouTube Data API v3**.
 3. Generate an **API Key**.
-4. Enter your key in the app or update `st.session_state.api_key` in `app.py`.
+4. Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and paste your key:
+   ```toml
+   YOUTUBE_API_KEY = "your-api-key-here"
+   ```
+   You can also set `YOUTUBE_API_KEY` as an environment variable. On Streamlit Cloud, add it under **App settings → Secrets**.
+
+`secrets.toml` is listed in `.gitignore`, so your key is never committed.
 
 ---
 
@@ -137,7 +147,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <b>Made with by Aniket</b>
+  <b>Made with ❤️ by <a href="https://github.com/Aniketgupta149">Aniket Gupta</a></b>
 </div>
 
 
